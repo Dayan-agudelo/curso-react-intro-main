@@ -1,7 +1,10 @@
-function TodoSearch(){
-  return(
-    <input placeholder='Buscar TODO' />
-  )
+function TodoSearch() {
+  return (
+    <input
+      placeholder="Cortar cebolla"
+      className="TodoSearch"
+    />
+  );
 }
 
 

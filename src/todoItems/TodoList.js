@@ -1,13 +1,11 @@
 
 
-function TodoList(props){
- return(
-    <section>
-      <ul>
-       {props.children}
-      </ul>
-    </section>
-  )
+function TodoList({ children }) {
+  return (
+    <ul className="TodoList">
+      {children}
+    </ul>
+  );
 }
 
 
