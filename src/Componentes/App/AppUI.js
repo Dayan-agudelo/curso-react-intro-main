@@ -3,7 +3,9 @@ import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItems';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoCounter } from '../TodoCounter';
-
+import { TodosLoading } from '../TodosLoading';
+import { TodosError } from '../TodosError';
+import { TodosEmpty } from '../TodosEmpty';
 
 function AppUI({
   loading,
@@ -28,9 +30,9 @@ function AppUI({
       />
 
       <TodoList>
-        {loading && <p>Estamos cargando, no desesperes...</p>}
-        {error && <p>Ha ocurrido un error, intenta de nuevo</p>}
-        {(!loading && searchedTodos.length === 0) && <p>Crea tu primer TODO</p>}
+        {loading && <> <TodosLoading /> <TodosLoading /> <TodosLoading /> </> }
+        {error && <TodosError />}
+        {(!loading && searchedTodos.length === 0) && <TodosEmpty/>}
 
 
         {searchedTodos.map(todo => (
