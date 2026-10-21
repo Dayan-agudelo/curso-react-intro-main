@@ -37,13 +37,22 @@ function TodoProvider({ children }) {
 
   const deleteTodo = (text) => {
     const newTodos = [...todos];
-    const todoIndex = newTodos.findIndex(
-      (todo) => todo.text === text
-    );
-    newTodos.splice(todoIndex, 1);
+    newTodos.push({
+      completed: false,
+      text,
+    });
     saveTodos(newTodos);
   };
   
+const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      completed: false,
+      text,
+    });
+    saveTodos(newTodos);
+  }
+
   return (
     <TodoContext.Provider value={{
       loading,
@@ -57,6 +66,7 @@ function TodoProvider({ children }) {
       deleteTodo,
       openModal,
       setOpenModal,
+      addTodo,
     }}>
       {children}
     </TodoContext.Provider>
