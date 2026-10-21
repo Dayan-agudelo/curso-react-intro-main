@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Dayan-agudelo/curso-react-intro-main/static/css/main.bc4e9962.css",
+    "main.js": "/Dayan-agudelo/curso-react-intro-main/static/js/main.5faefbc4.js",
+    "index.html": "/Dayan-agudelo/curso-react-intro-main/index.html",
+    "main.bc4e9962.css.map": "/Dayan-agudelo/curso-react-intro-main/static/css/main.bc4e9962.css.map",
+    "main.5faefbc4.js.map": "/Dayan-agudelo/curso-react-intro-main/static/js/main.5faefbc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc4e9962.css",
+    "static/js/main.5faefbc4.js"
+  ]
+}
